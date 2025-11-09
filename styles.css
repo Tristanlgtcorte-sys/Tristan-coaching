@@ -1,0 +1,78 @@
+
+:root{
+  --bg:#080808;
+  --card:#0f0f0f;
+  --accent:#b9ff3b; /* green fluo */
+  --muted:#bfc6cc;
+  --text:#ffffff;
+  --maxW:1100px;
+  --radius:12px;
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.site{max-width:var(--maxW);margin:0 auto;padding:20px}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0;position:sticky;top:0;background:linear-gradient(0deg, rgba(8,8,8,0.9), rgba(8,8,8,0.8));backdrop-filter:blur(6px);z-index:30}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:64px;height:64px;object-fit:contain;border-radius:8px;background:#000;padding:6px}
+.brand-text h1{margin:0;font-size:18px;letter-spacing:0.04em}
+.tag{margin:0;color:var(--muted);font-size:13px}
+.nav{display:flex;gap:16px}
+.nav a{color:var(--muted);text-decoration:none;font-weight:600}
+.menu-toggle{display:none;background:none;border:0;color:var(--muted);font-size:20px}
+
+.hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;padding:28px 0}
+.hero-inner h2{margin:0;font-size:28px}
+.lead{margin-top:10px;color:var(--muted)}
+.cta-row{margin-top:16px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn.primary{background:var(--accent);color:#042}
+.btn.ghost{border:2px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent;margin-left:8px}
+
+.hero-img img{width:100%;height:auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+
+.packs{padding:24px 0}
+.packs h3{margin:0 0 12px;color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.card.featured{border-color:var(--accent);box-shadow:0 6px 20px rgba(185,255,59,0.06)}
+
+.temoignages{padding:24px 0}
+.testimonial-grid{display:grid;grid-template-columns:1fr 320px;gap:16px;align-items:start}
+.testimonial{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+.testimonial .quote-header{font-weight:700;margin-bottom:8px;color:var(--accent)}
+.image-test img{width:100%;border-radius:12px;object-fit:cover}
+
+.contact{padding:24px 0}
+.contact-row{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+.contact-form label{display:block;margin-bottom:8px;font-size:14px}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:var(--text);margin-top:6px}
+.form-actions{margin-top:10px;display:flex;gap:8px}
+.contact-info h4{margin:0 0 8px}
+.socials{display:flex;gap:8px;margin-top:12px}
+.social{display:inline-block;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted)}
+
+.site-footer{display:flex;justify-content:space-between;align-items:center;padding:16px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.02)}
+
+.floating-actions{position:fixed;right:16px;bottom:22px;display:flex;flex-direction:column;gap:8px;z-index:60}
+.float{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;text-decoration:none;font-weight:700}
+.insta{background:#111;color:var(--accent);border:2px solid rgba(185,255,59,0.06)}
+.wa{background:#075e54;color:#fff}
+
+.muted{color:var(--muted);font-size:13px}
+
+/* small screens */
+@media(max-width:880px){
+  .hero{grid-template-columns:1fr;padding:16px 0}
+  .hero-img{order:-1}
+  .testimonial-grid{grid-template-columns:1fr;gap:12px}
+  .contact-row{grid-template-columns:1fr}
+  .nav{display:none}
+  .menu-toggle{display:block}
+}
+
+/* appear animations */
+.appear{opacity:0;transform:translateY(8px);animation:fadeUp .7s forwards}
+.appear.delay{animation-delay:.14s}
+.appear.delay-2{animation-delay:.28s}
+@keyframes fadeUp{to{opacity:1;transform:none}}

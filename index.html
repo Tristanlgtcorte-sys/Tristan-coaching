@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tristan Coaching — Coach sportif à Propriano</title>
+  <meta name="description" content="Tristan Coaching — Coach sportif à Propriano. Reprenez confiance en votre corps avec des programmes personnalisés." />
+  <meta name="keywords" content="coach sportif Propriano, Tristan Coaching, préparation physique Corse du Sud, coaching personnel Propriano" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Tristan Coaching logo" class="logo"/>
+        <div class="brand-text">
+          <h1>Tristan Coaching</h1>
+          <p class="tag">Coach sportif à Propriano — Reprenez confiance en votre corps.</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#packs">Packs & Tarifs</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="menu">☰</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h2 class="appear">Coach sportif à Propriano</h2>
+          <p class="lead appear delay">Reprenez confiance en votre corps.</p>
+          <div class="cta-row appear delay-2">
+            <a class="btn primary" href="#contact">Réserver une séance</a>
+            <a class="btn ghost" href="#packs">Voir les packs</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="assets/packs.jpg" alt="Packs Tristan Coaching" />
+        </div>
+      </section>
+
+      <section id="packs" class="packs">
+        <h3>Packs & Tarifs</h3>
+        <div class="cards">
+          <div class="card">
+            <h4>Le Curieux — 30€</h4>
+            <p>1 séance découverte, idéal si besoin d’en savoir plus et de sentir son corps une première fois.</p>
+          </div>
+          <div class="card featured">
+            <h4>Le Start — 200€</h4>
+            <p>Nombre illimité de séances pendant 1 mois — parfait pour adopter un rythme intensif.</p>
+          </div>
+          <div class="card">
+            <h4>Le Quotidien — 200€</h4>
+            <p>10 séances sur 5 semaines max — rythme régulier et résultats solides sur le long terme.</p>
+          </div>
+          <div class="card">
+            <h4>Le Santé — 120€</h4>
+            <p>5 séances, idéal pour reprendre en douceur, une fois par semaine.</p>
+          </div>
+          <div class="card">
+            <h4>Le Réservé — 60€</h4>
+            <p>Programme sur un mois, personnalisé selon vos objectifs, à l'abri des regards.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="temoignages" class="temoignages">
+        <h3>Témoignage client</h3>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <div class="quote-header">E., 40 ans — 2 mois de coaching</div>
+            <p>En surpoids et persuadée d'avoir un mental trop fragile pour suivre une routine sportive, j'ai contacté Tristan un peu comme on jette une bouteille à la mer. Ça a été la meilleure décision que j'ai pu prendre. Dès le départ, Tristan m'a accueillie avec bienveillance ...</p>
+            <p class="more">Son approche est motivante, positive et adaptée. Chaque séance est un petit pas de plus vers un mieux-être global.</p>
+          </div>
+          <div class="testimonial image-test">
+            <img src="assets/testimonial.jpg" alt="Témoignage visuel" />
+          </div>
+        </div>
+        <p class="muted">Tu peux ajouter d'autres témoignages facilement : voir la section "Ajouter un témoignage" dans la documentation fournie.</p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <div class="contact-row">
+          <div class="contact-form">
+            <!-- Basic form: by default opens mail client. See README for Formspree instructions -->
+            <form id="contactForm" action="mailto:tristanlgtcorte@gmail.com" method="GET" enctype="text/plain">
+              <label>Ton nom<input name="name" required /></label>
+              <label>Ton email<input name="email" type="email" required /></label>
+              <label>Message<textarea name="message" required></textarea></label>
+              <div class="form-actions">
+                <button type="submit" class="btn primary">Envoyer par email</button>
+                <button type="button" id="submitFormFetch" class="btn ghost">Envoyer via Formspree (option)</button>
+              </div>
+            </form>
+            <p class="muted">Email direct : <a href="mailto:tristanlgtcorte@gmail.com">tristanlgtcorte@gmail.com</a></p>
+            <p class="muted">Téléphone : <a href="tel:+33788251061">07 88 25 10 61</a></p>
+            <p class="muted">Instagram : <a href="https://instagram.com/tristan.coaching" target="_blank">@tristan.coaching</a></p>
+          </div>
+          <div class="contact-info">
+            <h4>Prendre RDV</h4>
+            <p>Tu peux m'envoyer un message via l'un des boutons ci-dessous ou appeler directement.</p>
+            <div class="socials">
+              <a class="social" href="https://instagram.com/tristan.coaching" target="_blank">Instagram</a>
+              <a class="social" id="whatsappBtn" href="https://wa.me/33788251061" target="_blank">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>© <span id="year"></span> Tristan Coaching — Propriano</div>
+      <div class="footer-links">
+        <a href="https://instagram.com/tristan.coaching" target="_blank">Instagram</a>
+      </div>
+    </footer>
+
+    <div class="floating-actions">
+      <a class="float insta" href="https://instagram.com/tristan.coaching" target="_blank" title="Instagram">IG</a>
+      <a class="float wa" href="https://wa.me/33788251061" target="_blank" title="WhatsApp">WA</a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
