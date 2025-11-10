@@ -5,7 +5,7 @@ Contenu:
 - index.html
 - styles.css
 - script.js
-- assets/ (logo.png, packs.jpg, testimonial.jpg)
+- assets/ (logo.png.jpg, packs.jpg.png, testimonial.jpg.png)
 
 REMPLACER LES IMAGES:
 - Remplace assets/logo.png par ton logo (réutilise le même nom ou modifie le HTML).
